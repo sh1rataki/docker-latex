@@ -14,7 +14,7 @@ RUN apt-get install -qy \
     make git \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /data
+WORKDIR $PWD/data
 
-VOLUME ["/data"]
+VOLUME [$PWD]
 CMD ["bash"]
