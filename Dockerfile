@@ -14,7 +14,11 @@ RUN apt-get install -qy \
     make git \
     && rm -rf /var/lib/apt/lists/*
 
+COPY ./.latexmkrc /root/.latexmkrc
+
+
 WORKDIR $PWD/data
 
 VOLUME [$PWD]
-CMD ["bash"]
+#CMD ["bash"]
+ENTRYPOINT latexmk -pvc $@
