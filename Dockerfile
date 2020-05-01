@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-LABEl maintainer="oyopen<otyogupenguin@gmail.com>"
+LABEl maintainer="oyopen<oyogupenguin@gmail.com>"
 
 
 RUN echo "building...."
